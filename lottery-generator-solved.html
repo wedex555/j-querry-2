@@ -4,7 +4,6 @@
   <meta charset="UTF-8">
   <title>Lottery Generator</title>
 
-  
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
  
@@ -18,14 +17,12 @@
 
     <div class="text-center">
 
-     
       <button id="random-button" class="btn btn-primary btn-lg"><h1>?</h1></button>
 
     </div>
 
   </div>
 
- 
   <h1 class="text-center" id="random-number"></h1>
 
   <script type="text/javascript">
@@ -34,20 +31,16 @@
 
       $("#random-button").on("click", function() {
 
-       
         var lottoNumber = "";
 
-       
         for (var i = 0; i < 9; i++) {
 
-          
           var random = Math.floor(Math.random() * 9) + 1;
 
           lottoNumber = random + lottoNumber;
 
         }
 
-       
         $("#random-number").prepend("<br><hr>" + lottoNumber);
 
       });
